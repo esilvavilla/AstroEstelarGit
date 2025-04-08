@@ -1,0 +1,96 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Astrofísica Estelar
+author:
+  email: esteban.silvav@udea.edu.co
+  name: Esteban Silva-Villa
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Página para el curso Astrofísica Estelar del pregrado de Astronomía 
+  de la Universidad de Antioquia, Colombia.
+  
+subtitle: This course introduces students to the field of data science and its applications in the public sector. Modern performance management and evaluation processes require strong data literacy and the ability to combine and analyze data from a variety of sources to inform managerial processes. We offer a practical, tools-based approach that is designed to build strong foundations for people that want to work as policy analysts or data-driven managers. We will cover data programming fundamentals, visualization, text analysis, automated reporting, and dynamic reporting using dashboards. The course is analytically rigorous, but no prior programming experience is assumed.
+
+baseurl: "" # /astroestelar-site the subpath of your site, e.g. /blog
+
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink:          /:title/
+
+url: "" # esilvavilla.github.io/astroestelar-site the base hostname & protocol for your site, e.g. http://example.com
+
+# Site logo, image or text
+brand:
+    image:          logoAE.png  # e.g. logo.png, upload logo image file to /assets/img/ folder
+    text:           Astrofísica Estelar      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+
+#    title: Intro to Data Science for the Social Sector
+#    image: imac.svg
+subtitle: This course introduces students to the field of data science and its applications in the public sector. Modern performance management and evaluation processes require strong data literacy and the ability to combine and analyze data from a variety of sources to inform managerial processes. We offer a practical, tools-based approach that is designed to build strong foundations for people that want to work as policy analysts or data-driven managers. We will cover data programming fundamentals, visualization, text analysis, automated reporting, and dynamic reporting using dashboards. The course is analytically rigorous, but no prior programming experience is assumed.
+
+# theme: minima
+remote_theme: jekyll/minima@d4d779a
+minima:
+  skin: solarized-light #auto
+  nav_pages:
+#   - /index
+#   - /acerca/
+   - /programa/
+   - /cronograma/
+   - /bibliografia/
+
+
+# Build settings
+markdown: kramdown
+#plugins:
+#  - jekyll-feed
+
+
+# highlighter:        rouge
+
+gems:
+#  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-avatar
+#exclude:
+#  - Gemfile
+#  - Gemfile.lock
+#  - node_modules
+
+#sass:
+#  style:            compressed
+#  quiet_deps: true
+#  silence_deprecations: [import]
+
+#collections:
+#  docs:
+#    output: true
+
+
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
